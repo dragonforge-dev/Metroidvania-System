@@ -33,7 +33,7 @@ func _notification(what: int) -> void:
 func recreate_cache():
 	_cache.clear()
 	_custom_elements_cache.clear()
-	var shared_borders := MetSys.settings.theme.use_shared_borders
+	var shared_borders: bool = MetSys.settings.theme.use_shared_borders
 	
 	for y in size.y:
 		for x in size.x:
